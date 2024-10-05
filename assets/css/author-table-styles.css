@@ -1,0 +1,103 @@
+/*
+Author table styles
+*/
+.author-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.author-info-table th,
+.author-info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.author-info-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.author-info-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.author-info-table tr:hover {
+    background-color: #f5f5f5;
+}
+/*
+Pagination styles
+*/
+.ait-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.ait-pagination__btn,
+.ait-pagination__number {
+    min-width: 30px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #606266;
+    border: 1px solid #dcdfe6;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+}
+
+.ait-pagination__btn:hover,
+.ait-pagination__number:hover {
+    color: #409eff;
+    border-color: #409eff;
+}
+
+.ait-pagination__btn--disabled,
+.ait-pagination__btn--disabled:hover {
+    color: #c0c4cc;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #dcdfe6;
+}
+
+.ait-pagination__number--active {
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+}
+
+.ait-pagination__pager {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ait-pagination__more {
+    color: #606266;
+}
+
+.ait-pagination__per-page {
+    margin-left: 10px;
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #606266;
+}
+
+.ait-pagination__per-page:focus {
+    outline: none;
+    border-color: #409eff;
+}
+
+.ait-pagination__total {
+    font-size: 14px;
+    color: #606266;
+}
